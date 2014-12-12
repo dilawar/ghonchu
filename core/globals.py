@@ -14,5 +14,13 @@ __maintainer__       = "Dilawar Singh"
 __email__            = "dilawars@ncbs.res.in"
 __status__           = "Development"
 
-config = None
+import os 
+import time
+import datetime
 
+st = time.time()
+
+stamp_ = datetime.datetime.fromtimestamp(st).strftime('%Y-%m-%d-%H%M')
+
+config_ = None
+editor_ = os.environ.get('EDITOR', 'vim')

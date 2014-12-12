@@ -19,9 +19,10 @@ from core import globals
 from core import execute
 
 def run(conf, args):
-    globals.conf = conf
+    globals.config_ = conf
     if args.new_note:
         print("Writing a new note")
+        execute.new_note(args.new_note)
     elif args.update_note:
         print("Updating a new note")
 

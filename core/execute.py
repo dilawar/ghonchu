@@ -16,5 +16,6 @@ __status__           = "Development"
 
 from notes import note
 
-def now_note(title):
-    print("Creating note with title")
+def new_note(title):
+    n = note.Note(title)
+    n.write()
