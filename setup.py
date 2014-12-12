@@ -22,7 +22,7 @@ setup(
     version = "0.0.1",
     description = "A stupid task manager.",
     long_description = readme,
-    packages = ["package" ],
+    packages = [ ],
     package_data = {},
     install_requires = [ ],
     author = "Dilawar Singh",
@@ -31,6 +31,6 @@ setup(
     license='GPL',
     classifiers=classifiers,
     entry_points={
-        'console_scripts': 'ghonchu:main'
+        'console_scripts': [ 'ghonchu = ghonchu:main' ]
         }
 )
