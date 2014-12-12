@@ -1,5 +1,6 @@
-
-"""execute.py: Execute core action.
+"""note.py: 
+    
+    Note class.
 
 Last modified: Sat Jan 18, 2014  05:01PM
 
@@ -14,7 +15,10 @@ __maintainer__       = "Dilawar Singh"
 __email__            = "dilawars@ncbs.res.in"
 __status__           = "Development"
 
-from notes import note
 
-def now_note(title):
-    print("Creating note with title")
+class Note(object):
+    """docstring for Note"""
+    def __init__(self, title):
+        super(Note, self).__init__()
+        self.title = title
+        
